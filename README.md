@@ -18,14 +18,22 @@ sudo cp -r /home/$(whoami)/Cachyos-HHD/etc /etc  /home/$(whoami)/Cachyos-HHD/usr
 + /etc/sddm.conf.d/steam-deckify.conf
 + 
 + Open the file it will look like this
-+ [General]
+  
+[General]
+    
 DisplayServer=wayland
+
 GreeterEnvironment=QT_WAYLAND_SHELL_INTEGRATION=layer-shell
+
 [Autologin]
+
 Relogin=true
+
 #This is only for first boot as a file that overrides this gets created once /usr/lib/os-session-select runs
+
 Session=gamescope-session.desktop
-User= # Add your user name here, save and close
+
+User= (Add your user name here), save and close
 
 + Run This
 + 
