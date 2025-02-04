@@ -1,3 +1,7 @@
+```
+git clone https://github.com/Ripplingsnake12/Cachyos-HHD.git
+```
+
 # Cachyos-HHD
 + Download Cachyos Desktop edition from here-  https://cdn77.cachyos.org/ISO/desktop/250202/cachyos-desktop-linux-250202.iso
 + Burn using Etcher, Ventoy or rufus to your usb
