@@ -7,8 +7,8 @@
 + Fill in your prefered username and password do not touch any other log in option!.
 + Once booted you will get the sddm log in screen fill in your password and select wayland session at the bottom and log in.
 + Run this
-
-sudo copy 
+```
+sudo cp -r 
 
 
 
