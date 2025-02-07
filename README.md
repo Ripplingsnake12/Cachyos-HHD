@@ -36,7 +36,7 @@ Session=gamescope-session.desktop
 User= (Add your user name here), save and close
 
 + Run This
-+ 
+  
 ```
 sudo pacman -S discover flatpak
 sudo pacman -Rdd kwallet
@@ -44,6 +44,7 @@ sudo pacman -R inputplumber
 curl -L https://github.com/hhd-dev/hhd/raw/master/install.sh | bash
 
 ```
++Goto Settings Type SDDM then select login screen. Top right behaviour select Plasma one time launch
 + Reboot you should now have Auto log in to game mode, desktop and HHD 
 
 
