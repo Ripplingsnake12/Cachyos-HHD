@@ -39,7 +39,6 @@ User= (Add your user name here), save and close
   
 ```
 sudo pacman -S discover flatpak maliit-framework maliit-keyboard yay
-sudo pacman -Rdd kwallet
 sudo pacman -R inputplumber
 yay -S mkinitcpio-firmware
 curl -L https://github.com/hhd-dev/hhd/raw/master/install.sh | bash
