@@ -1,51 +1,43 @@
-```
-git clone https://github.com/Ripplingsnake12/Cachyos-HHD.git
-```
+# Follow instructions below to get HHD working on Cachyos Handheld
++ Open Kernel Manager and select configure kernel
++ Select RC kernel from top drop down and check the options you see here
 
-# Cachyos-HHD
-+ Download Cachyos Desktop edition from here-  https://cdn77.cachyos.org/ISO/desktop/250202/cachyos-desktop-linux-250202.iso
-+ Burn using Etcher, Ventoy or rufus to your usb
-+ You will need a dock and wired keyboard for first install.
-+ Select sdboot manager, set language etc
-+ Leave desktop to plasma.
-+ Fill in your prefered username and password do not touch any other log in option!.
-+ Once booted you will get the sddm log in screen fill in your password and select wayland session at the bottom and log in.
-+ Run this
-```
-sudo cp -r /home/$(whoami)/Cachyos-HHD/etc /etc  /home/$(whoami)/Cachyos-HHD/usr /usr
-```
-+ Goto 
-+ /etc/sddm.conf.d/steam-deckify.conf
-+ 
-+ Open the file it will look like this
+![Screenshot_20250226_112611](https://github.com/user-attachments/assets/ef50d1f4-6259-4faa-b310-aa5d57de4580)
+
++ Click compile kernel
++ Once option menu open up go here press Enter
   
-[General]
-    
-DisplayServer=wayland
+![Screenshot_20250226_112713](https://github.com/user-attachments/assets/d52489a5-8675-4227-8f0a-adadf5877ea1)
 
-GreeterEnvironment=QT_WAYLAND_SHELL_INTEGRATION=layer-shell
-
-[Autologin]
-
-Relogin=true
-
-#This is only for first boot as a file that overrides this gets created once /usr/lib/os-session-select runs
-
-Session=gamescope-session.desktop
-
-User= (Add your user name here), save and close
-
-+ Run This
++ Scroll down till you see this then press enter again.
   
-```
-sudo pacman -S discover flatpak maliit-framework maliit-keyboard yay
+![Screenshot_20250226_112740](https://github.com/user-attachments/assets/026b3ef4-b797-442d-82e4-d19dff7153f4)
+
++ Scroll down to This option and enter again.
+
+![Screenshot_20250226_112755](https://github.com/user-attachments/assets/da23ab93-bb55-458d-9b86-4615d2a73de6)
+
++ Scroll down to the two asus options and deselect them by pressing n key.
+
+![Screenshot_20250226_112829](https://github.com/user-attachments/assets/c1c6829b-db24-4f2c-8fc9-bd14f6156840)
+
++ Press F6 to save .conf then esc to exit and Kernel will start to build this will take up to 30 mins.
++ Follow instructions on screen and select yes to install modules
++ After this is complete run the commands below in your terminal
+
+ ```
+sudo pacman -S discover flatpak 
 sudo pacman -R inputplumber
 yay -S mkinitcpio-firmware
 curl -L https://github.com/hhd-dev/hhd/raw/master/install.sh | bash
 
 ```
-+Goto Settings Type SDDM then select login screen. Top right behaviour select Plasma one time launch
-+ Reboot you should now have Auto log in to game mode, desktop and HHD 
++ Reboot once its done, hold vol up key while booting to go into boot menu and select the new RC kernel 
+
++ Enjoy HHD 
+
+  
+
 
 
 
