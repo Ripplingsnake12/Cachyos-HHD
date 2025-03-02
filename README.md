@@ -29,6 +29,8 @@
 sudo pacman -S discover flatpak 
 sudo pacman -R inputplumber
 yay -S mkinitcpio-firmware
+sudo systemctl mask power-profiles-daemon
+
 curl -L https://github.com/hhd-dev/hhd/raw/master/install.sh | bash
 
 ```
